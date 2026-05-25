@@ -1,0 +1,259 @@
+html,
+body {
+    background: #f8fafc;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* LINKS */
+
+a,
+.btn-link {
+    color: #006bb7;
+    text-decoration: none;
+}
+
+    a:hover,
+    .btn-link:hover {
+        text-decoration: underline;
+    }
+
+/* BOTÕES */
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* FOCO */
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem #fff, 0 0 0 0.25rem #258cfb;
+}
+
+/* LAYOUT PRINCIPAL */
+
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* CONTEÚDO */
+
+.content {
+    padding: 1.5rem;
+}
+
+/* TÍTULOS */
+
+h1:focus {
+    outline: none;
+}
+
+/* VALIDAÇÕES */
+
+.valid.modified:not([type=checkbox]) {
+    outline: 1px solid #26b050;
+}
+
+.invalid {
+    outline: 1px solid #e50000;
+}
+
+.validation-message {
+    color: #e50000;
+}
+
+/* ERRO DO BLAZOR */
+
+.blazor-error-boundary {
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNDkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgb3ZlcmZsb3c9ImhpZGRlbiI+PHBhdGggZD0iTTI2My41MDYgNTFDMjY0LjcxNyA1MSAyNjUuODEzIDUxLjQ4MzcgMjY2LjYwNiA1Mi4yNjU4TDI5MC41NDUgOTIuNzk1QzI5MC44NzcgOTMuNTEzIDI5MSA5NC4wODE1IDI5MSA5NC42NzgyIDI5MSA5Ny4wNjUxIDI4OS4wMzggOTkgMjg2LjYxNyA5OUwyNDAuMzgzIDk5QzIzNy45NjMgOTkgMjM2IDk3LjA2NTEgMjM2IDk0LjY3ODJMMjU5LjQ3MyA1My42Mjk0QzI2MC40MDcgNTIuMjY1OCAyNjEuMiA1MSAyNjMuNTA2IDUxWiIgZmlsbD0iI0ZGRTUwMCIvPjwvc3ZnPg==) no-repeat 1rem center / 1.8rem, #b32121;
+    color: white;
+    padding: 1rem 1rem 1rem 3.7rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+    .blazor-error-boundary::after {
+        content: "An error has occurred.";
+    }
+
+/* CHECKBOX */
+
+.darker-border-checkbox.form-check-input {
+    border-color: #929292;
+}
+
+/* PLACEHOLDER */
+
+.form-floating > .form-control-plaintext::placeholder,
+.form-floating > .form-control::placeholder {
+    color: var(--bs-secondary-color);
+    text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder,
+.form-floating > .form-control:focus::placeholder {
+    text-align: start;
+}
+
+/* PÁGINA INICIAL */
+
+.pagina-inicial {
+    background: #f8fafc;
+    color: #1e293b;
+    min-height: 100vh;
+    padding: 2rem 1.5rem 4rem;
+}
+
+/* SEÇÕES */
+
+.secao-banner,
+.secao-destaques {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.secao-banner {
+    padding: 1.5rem 0 2rem;
+}
+
+/* BANNER */
+
+.banner-principal {
+    background: linear-gradient(135deg, #1d4ed8, #0f172a);
+    border-radius: 20px;
+    color: #f8fafc;
+    padding: 2rem;
+    text-align: center;
+}
+
+.subtitulo-banner,
+.numero-destaque {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.subtitulo-banner {
+    color: #bfdbfe;
+    margin-bottom: 0.75rem;
+}
+
+.titulo-banner {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin: 0;
+}
+
+.texto-banner {
+    line-height: 1.6;
+    margin: 1rem auto 0;
+    max-width: 38rem;
+}
+
+/* CARDS */
+
+.secao-destaques {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cartao-destaque {
+    background: #fff;
+    border: 1px solid #dbe4f0;
+    border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+    .cartao-destaque:hover {
+        transform: translateY(-4px);
+    }
+
+.cartao-claro {
+    background: #fff;
+}
+
+.cartao-escuro {
+    background: #1e293b;
+    color: #f8fafc;
+}
+
+.cartao-destaque-contato {
+    background: #fff7ed;
+}
+
+.numero-destaque {
+    color: #2563eb;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.cartao-destaque h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.7rem;
+    margin-bottom: 0.75rem;
+}
+
+.cartao-destaque p {
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+}
+
+.cartao-destaque a {
+    color: inherit;
+    font-weight: 700;
+}
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 641px) {
+    .page {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .secao-destaques {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .pagina-inicial {
+        padding: 1rem 1rem 3rem;
+    }
+
+    .banner-principal,
+    .cartao-destaque {
+        border-radius: 14px;
+    }
+
+    .banner-principal {
+        padding: 1.5rem;
+    }
+}
